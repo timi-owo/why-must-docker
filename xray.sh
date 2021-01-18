@@ -5,7 +5,7 @@ BINARY_NAME='xray'
 DAEMON_NAME='Xray Service Daemon'
 
 # specify version to install
-VERSION='1.2.1'
+VERSION='1.2.2'
 
 # --------------------------------------------------
 
