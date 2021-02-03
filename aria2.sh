@@ -64,13 +64,13 @@ fi
 
 # check dependencies (c-ares)
 if [ ! -f "/usr/local/lib/pkgconfig/libcares.pc" ]; then
-	print_red "* required dependency 'c-ares' are not installed"
+	print_red "* required dependency 'c-ares' not installed"
 	exit 1
 fi
 
 # check dependencies (sqlite3)
 if [ ! -f "/usr/local/lib/pkgconfig/sqlite3.pc" ]; then
-	print_red "* required dependency 'sqlite3' are not installed"
+	print_red "* required dependency 'sqlite3' not installed"
 	exit 1
 fi
 
