@@ -5,7 +5,7 @@ BINARY_NAME='nginx'
 DAEMON_NAME='Nginx Service Daemon'
 
 # specify version to install
-VERSION='1.18.0'
+VERSION='1.19.6'
 
 # --------------------------------------------------
 
@@ -64,25 +64,25 @@ fi
 
 # check dependencies (perl)
 if [ ! -f "/usr/bin/perl" ]; then
-	print_red "* required dependency 'perl' are not installed"
+	print_red "* required dependency 'perl' not installed"
 	exit 1
 fi
 
 # check dependencies (pcre)
 if [ ! -f "/usr/local/lib/pkgconfig/libpcre.pc" ]; then
-	print_red "* required dependency 'pcre' are not installed"
+	print_red "* required dependency 'pcre' not installed"
 	exit 1
 fi
 
 # check dependencies (zlib)
 if [ ! -f "/usr/local/lib/pkgconfig/zlib.pc" ]; then
-	print_red "* required dependency 'zlib' are not installed"
+	print_red "* required dependency 'zlib' not installed"
 	exit 1
 fi
 
 # check dependencies (openssl)
 if [ ! -f "/usr/local/lib/pkgconfig/openssl.pc" ]; then
-	print_red "* required dependency 'openssl' are not installed"
+	print_red "* required dependency 'openssl' not installed"
 	exit 1
 fi
 
@@ -164,7 +164,7 @@ if [ -d "${SOURCE_DIR}" ]; then
 		--http-uwsgi-temp-path=${INSTALL_DIR}/temp/uwsgi_temp
 		--http-scgi-temp-path=${INSTALL_DIR}/temp/scgi_temp
 
-		# make sure module 'ngx_brotli' is available
+		# make sure module 'ngx_brotli' is available first
 		--add-module=${GIT_PATH}
 	)
 
