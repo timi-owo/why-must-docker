@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # specify version to install
-VERSION='5.32.0'
+VERSION='5.32.1'
 
 # --------------------------------------------------
 
