@@ -1,10 +1,13 @@
 #!/usr/bin/bash
 
-# specify version to install
-VERSION='3.34.0'
+# specify version to install (useless, only for display)
+VERSION='3.34.1'
 
-# specify release year of version above
-RELEASE_YEAR='2020'
+# specify version number to download (on sqlite website)
+VERSION_NUM='3340100'
+
+# specify release year of installation version
+RELEASE_YEAR='2021'
 
 # --------------------------------------------------
 
@@ -28,10 +31,9 @@ print_yellow()
 print_yellow "* installing 'sqlite v${VERSION}' ···"
 
 # don't edit those variables
-VERSION=$(echo ${VERSION} | awk -F '.' '{ print $1$2$3 "000" }')
-DOWNLOAD_URL="https://www.sqlite.org/${RELEASE_YEAR}/sqlite-autoconf-${VERSION}.tar.gz"
-DOWNLOAD_FILE="/tmp/sqlite-autoconf-${VERSION}.tar.gz"
-SOURCE_DIR="/usr/local/src/sqlite-autoconf-${VERSION}"
+DOWNLOAD_URL="https://www.sqlite.org/${RELEASE_YEAR}/sqlite-autoconf-${VERSION_NUM}.tar.gz"
+DOWNLOAD_FILE="/tmp/sqlite-autoconf-${VERSION_NUM}.tar.gz"
+SOURCE_DIR="/usr/local/src/sqlite-autoconf-${VERSION_NUM}"
 
 if [ -d "${SOURCE_DIR}" ]; then
 	print_red "* source directory '${SOURCE_DIR}' already exists"
