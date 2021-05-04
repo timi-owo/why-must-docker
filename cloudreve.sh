@@ -5,7 +5,7 @@ BINARY_NAME='cloudreve'
 DAEMON_NAME='Cloudreve Service Daemon'
 
 # specify version to install
-VERSION='3.2.1'
+VERSION='3.3.1'
 
 # --------------------------------------------------
 
