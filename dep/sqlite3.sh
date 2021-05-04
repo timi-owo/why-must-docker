@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
 # specify version to install (useless, only for display)
-VERSION='3.34.1'
+VERSION='3.35.5'
 
 # specify version number to download (on sqlite website)
-VERSION_NUM='3340100'
+VERSION_NUM='3350500'
 
 # specify release year of installation version
 RELEASE_YEAR='2021'
