@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # specify version to install
-VERSION='1.1.1i'
+VERSION='1.1.1k'
 
 # --------------------------------------------------
 
