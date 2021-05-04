@@ -5,7 +5,7 @@ BINARY_NAME='nginx'
 DAEMON_NAME='Nginx Service Daemon'
 
 # specify version to install
-VERSION='1.19.6'
+VERSION='1.19.10'
 
 # --------------------------------------------------
 
