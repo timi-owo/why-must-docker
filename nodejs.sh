@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # specify version to install
-VERSION='14.15.4'
+VERSION='14.16.1'
 
 # --------------------------------------------------
 
